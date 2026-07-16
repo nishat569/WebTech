@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HealthyLife Medical Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Patient Appointment Registration</h2>
+
+    <form id="appointmentForm">
+
+        <label>First Name</label>
+        <input type="text" id="fname">
+        <small id="fnameError" class="error"></small>
+
+        <label>Last Name</label>
+        <input type="text" id="lname">
+        <small id="lnameError" class="error"></small>
+
+        <label>Email</label>
+        <input type="email" id="email">
+        <small id="emailError" class="error"></small>
+
+        <label>Password</label>
+        <input type="password" id="password">
+        <small id="passwordError" class="error"></small>
+
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword">
+        <small id="confirmError" class="error"></small>
+
+        <label>Gender</label>
+        <div>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+        </div>
+        <small id="genderError" class="error"></small>
+
+        <label>Preferred Service</label>
+        <div>
+            <input type="checkbox" name="service" value="General Checkup"> General Checkup
+            <input type="checkbox" name="service" value="Dental"> Dental
+            <input type="checkbox" name="service" value="Eye Care"> Eye Care
+        </div>
+        <small id="serviceError" class="error"></small>
+
+        <label>Doctor's Department</label>
+        <select id="department">
+            <option value="">Select Department</option>
+            <option>Cardiology</option>
+            <option>Neurology</option>
+            <option>Orthopedics</option>
+            <option>Pediatrics</option>
+        </select>
+        <small id="departmentError" class="error"></small>
+
+        <label>Health Description</label>
+        <textarea id="description" rows="4"></textarea>
+        <small id="descriptionError" class="error"></small>
+
+        <br><br>
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <h3 id="successMessage"></h3>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
